@@ -7,6 +7,12 @@ Steps:
 rails new color-picker-bootstrap -j esbuild -c bootstrap -T -d postgresql && cd color-picker-bootstrap && subl .
 ```
 
-## Create Scaffolt:
+## Create Scaffold:
 ```
+rails g scaffold post title body:text font_color background_color
+```
+
+## Create & migrate DB:
+```
+rails db:create db:migrate
 ```
