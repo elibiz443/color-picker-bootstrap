@@ -16,3 +16,9 @@ rails g scaffold post title body:text font_color background_color
 ```
 rails db:create db:migrate
 ```
+
+## Add index to routes:
+
+```
+root "posts#index"
+```
