@@ -18,7 +18,10 @@ rails db:create db:migrate
 ```
 
 ## Add index to routes:
-
 ```
 root "posts#index"
+```
+ ## Run Server
+```
+bin/dev
 ```
