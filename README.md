@@ -25,3 +25,15 @@ root "posts#index"
 ```
 bin/dev
 ```
+
+## Run the following:
+```
+rails g stimulus colors
+
+yarn add @melloware/coloris
+```
+
+Add in Gemfile ```gem 'foreman', github: 'ddollar/foreman'```
+then ```bundle```
+
+Update stimulus controller and form.
