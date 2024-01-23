@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # username: etg
+  # password: immortal
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: color_picker_bootstrap_development
+
+test:
+  <<: *default
+  database: color_picker_bootstrap_test
+
+production:
+  <<: *default
+  database: color_picker_bootstrap_production
+  username: color_picker_bootstrap
+  password: <%= ENV["COLOR_PICKER_BOOTSTRAP_DATABASE_PASSWORD"] %>
